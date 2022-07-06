@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+  margin-top: -30px;
+  width: 270px;
+}
+
+.name-label {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  margin: 0;
+}
+
+.login-text {
+  color: rgb(217, 176, 255);
+  font-family: Alfa Slab One , cursive;
+  margin-left: 3px;
+}
+
+.email-label {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  margin: 0 0 30px;
+}
+
+input {
+  background-color: var(--btn);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-family: Alfa Slab One , cursive;
+  font-size: medium;
+  height: 30px;
+  margin-top: 10px;
+  outline: none;
+  width: 98%;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+  -webkit-text-fill-color: rgb(175, 170, 170);
+  transition: background-color 500000000000000000000s;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-login {
+
+  --base: rgb(217, 176, 255);
+
+  --second: rgba(191, 123, 255, 0.781);
+
+  --btn: rgb(100, 61, 136);
+  background-color: var(--btn);
+  border: 0.25em solid var(--base);
+  border-radius: 1em;
+  box-shadow: 0 0 1em 0.25em var(--base) , 0 0 4em 1em var(--second) , inset 0 0 0.75em 0.25em var(--base);
+  color: var(--base);
+  font-size: 15px;
+  font-weight: 900;
+  height: 50px;
+  outline: none;
+  padding: 0.8em 1.5em;
+  position: relative;
+  text-shadow: 0 0 0.5em var(--base);
+  transition: all 0.3s;
+  width: 125px;
+}
+
+.btn-login:hover {
+  background-color: var(--base);
+  box-shadow: 0 0 1em 0.25em var(--base) , 0 0 4em 2em var(--second) , inset 0 0 0.75em 0.25em var(--base);
+  color: var(--btn);
+}
+
+
+.btn-login:active {
+  box-shadow: 0 0 0.6em 0.25em var(--base) , 0 0 2.5em 2em var(--second) , inset 0 0 0.5em 0.25em var(--base);
+}
+
+
+.btn-login:disabled, .btn-login:disabled:hover {
+  background-color: var(--btn);
+  border: 0.25em solid var(--base) transparent;
+  border-radius: 1em;
+  box-shadow: 0 0 1em 0.25em var(--base) , 0 0 4em 1em var(--second) , inset 0 0 0.75em 0.25em var(--base);
+  color: transparent;
+  font-size: 15px;
+  font-weight: 900;
+  outline: none;
+  padding: 1em 3em;
+  position: relative;
+  text-shadow: 0 0 0.5em var(--base);
+  transition: all 0.3s;
+}
+
+
+.btn-login:after {
+  background-color: var(--second);
+  content: '';
+  filter: blur(2em);
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  pointer-events: none;
+  position: absolute;
+  top: 120%;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+  width: 100%;
+}
