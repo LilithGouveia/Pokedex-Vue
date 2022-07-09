@@ -5,7 +5,7 @@
 - This pokedex lists the first 151 pokemons of the api ('https://pokeapi.co/').
 - It has an input that filters the pokemons by name.
 - Every pokémon is a component.
-- The CSS preprocessor used was (_____).
+- The CSS preprocessor used was CSS SASS.
 - No styles or vuetify frameworks were used in this project.
 ---
 

@@ -16,13 +16,16 @@
     return props.name[0].toUpperCase()  + props.name.substring(1);
   });
 </script>
-
 <template>
-  <p>
-    #{{ number }} - {{ name }}
-  </p>
+<button type="button" class="card-container">
+  <img class="image-poke" v-bind:src="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + number +'.png'" />
+  <div class="footer-card">
+    <p>
+      {{ pokeName }}
+    </p>
+    <p>
+  #{{ number }}
+    </p>
+  </div>
+</button>
 </template>
-
-<style>
-/* #app {} */
-</style>

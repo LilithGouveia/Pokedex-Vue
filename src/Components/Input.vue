@@ -1,22 +1,15 @@
 <script setup>
 import { ref, onMounted, computed, watch } from 'vue';
-// Tratamento de erro caso o input esteja vazio.
-const handleInput = e => {
-  if (!e.target.value) {
-    searchResults.value = [];
-  }
-}
-
+import api from '../apis/api.vue'
+const filterText = ref("");
+const filteredPokemon = computed(() => {
+  return api
+})
 </script>
 
 <template>
-  <section @submit.prevent="searchPokemon" class="input">
-    <input placeholder="Search" v-model="query" @input="handleInput"/>
-  </section>
+  <div class="form__group field">
+    <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+    <label for="name" class="form__label">Name</label>
+  </div>
 </template>
-
-<style>
-/* #app {
-
-} */
-</style>

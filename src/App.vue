@@ -11,11 +11,11 @@
 </script>
 
 <template>
-  <main class="app">
+  <!-- <main> -->
     <header @submit.prevent="searchResults" class="input">
       <input placeholder="Search" />
     </header>
     <GetPokemon />
     <p>Desenvolvido pela mestre pokémon: Lili Gouveia</p>
-  </main>
+  <!-- </main> -->
 </template>
