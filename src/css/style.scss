@@ -31,17 +31,10 @@ body{
   height: 100%;
 }
 
-.form__group {
-  position: relative;
-  padding: 15px 0 0;
-  margin-top: 10px;
-  width: 50%;
-}
-
 input {
   margin: 0.5%;
   font-family: inherit;
-  width: 98%;
+  width: 97.5%;
   border: 0;
   border-bottom: 2px solid $gray;
   outline: 0;
@@ -76,4 +69,10 @@ input {
   display: flex;
   justify-content: space-between;
   margin: 2% 4% 4% 4%;
+}
+
+.signature{
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
 }

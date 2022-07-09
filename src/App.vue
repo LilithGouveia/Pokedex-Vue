@@ -1,21 +1,19 @@
 <script>
   import GetPokemon from '../src/apis/api.vue';
   import Card from '../src/Components/Card.vue';
+  import Input from './Components/Input.vue';
   export default {
     name: 'app',
     components: {
     GetPokemon,
-    Card
+    Card,
+    Input,
 },
   };
 </script>
 
 <template>
-  <!-- <main> -->
-    <header @submit.prevent="searchResults" class="input">
-      <input placeholder="Search" />
-    </header>
+    <Input />
     <GetPokemon />
-    <p>Desenvolvido pela mestre pokémon: Lili Gouveia</p>
-  <!-- </main> -->
+    <p class="signature">Desenvolvido pela mestre pokémon: Lili Gouveia</p>
 </template>
