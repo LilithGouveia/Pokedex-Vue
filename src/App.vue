@@ -17,7 +17,6 @@
 
     pokemons.value = data.results;
   });
-
 </script>
 
 <template>
@@ -33,6 +32,7 @@
     type="button"
     class="card-container"
     v-for="pokemon in filteredPokemon"
+
   >
     <img
       class="image-poke"
