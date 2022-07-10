@@ -9,6 +9,13 @@
 - No styles or vuetify frameworks were used in this project.
 ---
 
+## Initial Steps
+
+1. Install dependencies:
+    * `npm install`
+2. Start the project:
+    * `npm run dev` 
+
 ### SASS was used in this project.
 ### Vue 3 + Vite was used in this project.
 Recommended IDE Setup: [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
