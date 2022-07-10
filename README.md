@@ -5,6 +5,7 @@
 - This pokedex lists the first 151 pokemons of the api ('https://pokeapi.co/').
 - Every pokémon is a component.
 - It has an input that filters the pokemons by name, since the first letter.
+-Has a personalized error message.
 - The CSS preprocessor used was SASS.
 - No styles or vuetify frameworks were used in this project.
 ---

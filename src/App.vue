@@ -28,11 +28,14 @@
     id="search"
     required
   />
+  <div class="error" v-if="filteredPokemon.length === 0">
+     <p class="error-message">No pokémons found!</p>
+     <img src="https://i.pinimg.com/originals/c5/81/43/c58143c54117796ac190987bb5d562b7.gif" alt="sad-pikachu" class="sad-pikachu">
+  </div>
   <button
     type="button"
     class="card-container"
     v-for="pokemon in filteredPokemon"
-
   >
     <img
       class="image-poke"
@@ -49,5 +52,4 @@
       <p>#{{ pokemons.indexOf(pokemon)+1 }}</p>
     </div>
   </button>
-  <p class="signature">Desenvolvido pela mestre pokémon: Lili Gouveia</p>
 </template>

@@ -71,8 +71,23 @@ input {
   margin: 2% 4% 4% 4%;
 }
 
-.signature{
-  margin-top: 1%;
+.error{
+  margin-top: 5%;
+  margin-left: 25%;
+  width: 50%;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+}
+
+.sad-pikachu{
+  width: 100%;
+  height: auto;
+  border-radius: 30%;
+}
+
+.error-message{
+  font-size: larger;
+  margin-left: 25%;
 }
