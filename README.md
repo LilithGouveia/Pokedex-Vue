@@ -10,7 +10,7 @@
 - No styles or vuetify frameworks were used in this project.
 ---
 
-## Initial Steps
+## How to run
 
 1. Install dependencies:
     * `npm install`

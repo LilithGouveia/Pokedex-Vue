@@ -17,6 +17,7 @@
 
     pokemons.value = data.results;
   });
+
 </script>
 
 <template>
